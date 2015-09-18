@@ -81,4 +81,11 @@ Reali, F.\BCBT{} \BBA{} Griffiths, T.~L.
   regularization to inductive biases through iterated learning}.\BBCQ{}
 \newblock{}\Bem{Cognition}, \Bem{111}(3), 317--328.
 
+\bibitem[\protect\BCAY{Smith}{Smith}{2009}]{SMITH:2009uw}
+Smith, K.
+\newblock{}\BBOP{}2009\BBCP{}.
+\newblock{}\BBOQ{}{Iterated learning in populations of Bayesian agents}.\BBCQ{}
+\newblock{}\Bem{Proceedings of the 31st Annual Conference of the Cognitive
+  Science Society}, 697--702.
+
 \end{thebibliography}
