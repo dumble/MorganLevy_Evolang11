@@ -42,15 +42,15 @@ However, standard iterated-learning theories of language evolution do not, in fa
 \section{Dataset}
 \label{sec:dataset}
 %
-We take advantage of a uniquely appropriate real-world data set: \citeA{Morgan:2015to}'s corpus of 594 binomial expression types hand-annotated for a range of semantic, phonological, and lexical constraints known to affect binomial ordering preferences, and with frequencies of each ordering extracted from the Google Books corpus \cite{Lin:2012te}. Morgan and Levy also reported  a model estimating of the quantitative ordering preference for each binomial expression expected on the basis of the above constraints. The dataset and model give us three key measures for these 594 expression types:
+We take advantage of a uniquely appropriate real-world data set: \citeA{Morgan:2015to}'s corpus of 594 binomial expression types hand-annotated for a range of semantic, phonological, and lexical constraints known to affect binomial ordering preferences, and with frequencies of each ordering extracted from the Google Books corpus \cite{Lin:2012te}. Morgan and Levy also reported a model estimating the quantitative compositional ordering preference for each binomial expression, as expected on the basis of the above constraints (independent of actual occurrence frequencies). The dataset and model thus give us three key measures for these expressions:
 %
 \begin{itemize}
 \item The \emph{overall (unordered) frequency} of an expression: freq(``X and Y'')$+$freq(``Y and X'')
-\item The \emph{relative frequency} of occurrence of a given order, expressed as a number between 0 and 1: freq(``X and Y'')$/$(freq(``X and Y'')$+$freq(``Y and X''))
+\item The \emph{observed preference} for occurrence in a given order, expressed as a number between 0 and 1: freq(``X and Y'')$/$(freq(``X and Y'')$+$freq(``Y and X''))
 \item The \emph{compositional preference} for occurrence in a given order, expressed as a number between 0 and 1, given by Morgan and Levy's model.
 \end{itemize}
 %
-Relative frequencies of binomial ordering data are multimodally distributed, with modes at the extremes as well as around 0.5 (Fig.\ \ref{fig:corpus}). Crucially, this pattern is not predicted by compositional preferences, which predict only a single mode (Fig.\ \ref{fig:logistic}). This pattern reflects the key generalization to be accounted for in the present paper: that expressions with higher overall frequency diverge most from compositional, and are more regularized (Fig.\ \ref{fig:extremity}).  
+Observed preferences are multimodally distributed, with modes at the extremes as well as around 0.5 (Fig.\ \ref{fig:corpus}). Crucially, this pattern is not predicted by compositional preferences, which predict only a single mode (Fig.\ \ref{fig:logistic}). This pattern reflects the key generalization to be accounted for in the present paper: that expressions with higher overall frequency diverge most from compositional preferences, and are more regularized (Fig.\ \ref{fig:extremity}).  
 
 % We ask what combination of individual cognitive biases and properties of cultural transmission predict the patterns seen in Figs.\ \ref{fig:corpus} and \ref{fig:extremity}. We will see that a standard 2-Alternative Iterated Learning Model does not correctly predict these patterns, but an augmented model with an explicit regularization bias does.
 
@@ -67,7 +67,7 @@ Relative frequencies of binomial ordering data are multimodally distributed, wit
 	}
 
 \end{center}
-\caption{\footnotesize Results from Morgan and Levy (2015).  (a) Histogram of binomial types' relative frequencies. (b) Histogram of binomial types' compositional preferences. (c) We define an expression's \emph{extremity} as the absolute difference between its relative frequency and 0.5. More frequent expressions have more extreme/regularized preferences (solid blue line); see Morgan \& Levy (2015) for alternative ways to quantify extremity that yield similar conclusions. Density of overall frequency counts (scaled as described in Section \ref{corpus}) shown by dotted line. The distribution is non-Zipfian because the corpus is restricted to binomial types with at least 1000 occurrences in the Google Books corpus, to ensure accurate relative-frequency estimates.}
+\caption{\footnotesize Results from Morgan and Levy (2015).  (a) Histogram of binomial types' observed preferences. (b) Histogram of binomial types' compositional preferences. (c) We define an expression's \emph{extremity} as the absolute difference between its observed preference and 0.5. More frequent expressions have more extreme/regularized preferences (solid blue line); see Morgan \& Levy (2015) for alternative ways to quantify extremity that yield similar conclusions. Density of overall frequency counts (scaled as described in Section \ref{corpus}) shown by dotted line. The distribution is non-Zipfian because the corpus is restricted to binomial types with at least 1000 occurrences in the Google Books corpus, to ensure accurate observed preference estimates.}
 \end{figure}
 
 
@@ -102,30 +102,29 @@ We define a chain of learners under this model by initializing a single learner 
 \begin{figure}[t]
  \setlength\tabcolsep{1pt}
 \begin{center}
-  \begin{tabular}{lccc}
- & $\nu = 1$ & $\nu = 10$ & $\nu = 10$
+  \begin{tabular}{lcc}
+ & $\nu = 1$ &  $\nu = 10$
   \\
   $N=10$ & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-1-1.pdf}}
-  & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-1.pdf}}
+%  & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-1.pdf}}
   & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-10-1.pdf}}
 \\
   $N=100$ & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-1-2.pdf}}
-    & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-2.pdf}}
+%    & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-2.pdf}}
   & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-10-2.pdf}}
 \\
   $N=200$ & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-1-3.pdf}}
-    & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-3.pdf}}
+%    & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-3.pdf}}
   & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-10-3.pdf}}
 \\
   $N=500$ & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-1-4.pdf}}
-    & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-4.pdf}}
+%    & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-10-4.pdf}}
   & \pbox[c]{\textwidth}{\includegraphics[scale=.3]{sims-R-10-4.pdf}}
-\\
 
   
   \end{tabular}
 \end{center}
-\caption{{\footnotesize Distribution of binomial ordering preferences in a standard 2-Alternative Iterated Learning Model (dotted lines) and one with an explicit regularization bias (solid lines)\label{fig:R11}}}
+\caption{{\footnotesize Simulated distribution of binomial ordering preferences for a single expression type with $\mu=0.6$ in a standard 2-Alternative Iterated Learning Model (dotted lines) and one with an explicit regularization bias (solid lines)\label{fig:R11}. Note that $\theta'_1=\theta_1$ in the standard model. Regularization depends upon $N$ only in the model with an explicit regularization bias.}}
 \end{figure}
 
 %\setlength\tabcolsep{1pt}
@@ -176,7 +175,7 @@ As shown in Fig.\ \ref{fig:R}, the bias parameter $\alpha$ controls strength of 
 \end{wrapfigure}
 
  \subsection{Results: Frequency-dependent regularization}
- When we repeat the simulations from above using  a non-trivial regularization bias $\alpha=1.1$, we see frequency-dependent regularization in the case with a dense prior (Fig.\ \ref{fig:R11}). Although the regularization bias itself is frequency-independent, frequency-dependence emerges from the interaction of the regularization bias with the process of cultural transmission: At lower frequencies, there is not sufficient data for the regularization bias to overcome the prior. At higher frequencies, the regularization bias becomes increasingly dominant as there is increasingly enough data for the effects of this bias to be carried across generations. However, the prior always continues to exert some influence; thus, even the highest frequency expressions do not become completely regularized.
+ When we repeat the simulations from above using  a non-trivial regularization bias $\alpha=1.1$, we see frequency-dependent regularization in the case with a dense prior (Fig.\ \ref{fig:R11}). Although the regularization bias itself is frequency-independent, frequency-dependence emerges from the interaction of the regularization bias with the process of cultural transmission: At lower frequencies, there is not sufficient data for the regularization bias to overcome the prior. At higher frequencies, the regularization bias becomes increasingly dominant as there is increasingly enough data for the effects of this bias to be carried across generations. Even a relatively weak bias ($\alpha=1.1$) can produce noticeable regularization when compounded across generations. However, the prior always continues to exert some influence; thus, even the highest frequency expressions do not become completely regularized.
  
  Another linguistically accurate property of this model is that for sufficiently high values of $N$, the distribution over hypotheses includes a mode on the opposite side of 0.5 from the prior. Thus the model correctly predicts that at high enough frequencies, an expression can become idiosyncratically preferred in the opposite of its compositionally predicted direction (as in ``ladies and gentlemen'').
  
@@ -271,7 +270,7 @@ Our model has two free parameters, $\nu$ and $\alpha$. We model the corpus data 
 \section{Conclusion}
 \label{sec:conclusion}
 %
-We have demonstrated that a frequency-independent regularization bias in data generation, combined with cultural transmission, can produce the pattern of frequency-dependent regularization of binomial ordering preferences seen in corpus data. This finding sheds light on the origins of linguistic structure in two important ways: one, it confirms earlier demonstrations of a bias to regularize when learning stochastic linguistic items. Second, it shows that this bias can apply equally across all levels of frequency, but that combined with properties of cultural transmission it will produce frequency-dependent effects; thus, the distribution of idiosyncrasy seen in the language emerges from the interaction of individuals' cognitive biases with the bottleneck effect of cultural transmission. Additionally, we have expanded the empirical coverage of iterated-learning models, showing that they can account not only for qualitative generalizations in natural language and data from laboratory experiments, but also detailed patterns of naturalistic corpus data.  As we hope to have shown, binomial ordering preferences are a particularly suitable test case for iterated learning models, at once theoretically interesting, data-rich, and computationally tractable.
+We have demonstrated that a frequency-independent regularization bias in data generation, combined with cultural transmission, can produce the pattern of frequency-dependent regularization of binomial ordering preferences seen in corpus data. Cultural transmission creates frequency-dependence by introducing a bottleneck effect that favors prior knowledge at lower frequencies while allowing the regularization bias to be increasingly well transmitted at higher frequencies. This finding sheds light on the origins of linguistic structure in two important ways: one, it confirms earlier demonstrations of a bias to regularize when learning stochastic linguistic items. Second, it shows that this bias can apply equally across all levels of frequency, but that the distribution of idiosyncrasy seen in the language emerges from the interaction of individuals' cognitive biases with the bottleneck effect of cultural transmission. Additionally, we have expanded the empirical coverage of iterated-learning models, showing that they can account not only for qualitative generalizations in natural language and data from laboratory experiments, but also detailed patterns of naturalistic corpus data.  As we hope to have shown, binomial ordering preferences are a particularly suitable test case for iterated learning models, at once theoretically interesting, data-rich, and computationally tractable.
 
 %\begin{figure}[ht]
 %\begin{center}
@@ -309,7 +308,7 @@ We have demonstrated that a frequency-independent regularization bias in data ge
 \section*{Acknowledgements}
 
 [Acknowledgments withheld in submitted version to maintain author anonymity during review]
-\vspace{1cm}
+%\vspace{1cm}
 % We gratefully acknowledge support from research grants NSF 0953870 and NICHD R01HD065829 and fellowships from the Alfred P. Sloan Foundation and the Center for Advanced Study in the Behavioral Sciences to Roger Levy.
 
 
