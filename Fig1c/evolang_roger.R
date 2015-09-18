@@ -1,40 +1,40 @@
 library(rms)
 library(ggplot2)
 
-plot.spline.contribution <- function(m,x.raw,y.raw,spline.basis,idx,x.axis,xlab=NULL,as.spline=T,x.discrete=T,...) {
-        spline.params <- coef(m)[idx]
-        spline.Sigma <- vcov(m)[idx,idx]
-        if(as.spline) {
-                tmp <- rcs(x.axis,parms=attr(spline.basis,"parms"))
-                x.spline.basis <- cbind(rep(1,dim(tmp)[1]),matrix(tmp,dim(tmp)[1],dim(tmp)[2]))
-        }
-        else {
-                x.spline.basis=cbind(rep(1,length(spline.basis)),spline.basis)
-                print(x.spline.basis)
-                print(spline.params)
-        }
-        mle.contribution <- x.spline.basis %*% spline.params
-        ci.size <- qnorm(0.975)*sapply(1:length(mle.contribution),function(i) sqrt(t(x.spline.basis[i,]) %*% as.matrix(spline.Sigma) %*% x.spline.basis[i,]))
-        print(cbind(mle.contribution,ci.size))
-        nf <- layout(matrix(c(1,1,2,2),2,2,byrow=TRUE),heights=c(3,1))
-        par(mar=c(-0.1,4,4,2)+0.1)
-        plot(mle.contribution ~ x.axis,type="l",xlab="",xaxt="n",...)
-        points(x.raw,y.raw,pch=".")
-        lines(mle.contribution + ci.size ~ x.axis, lty=2)
-        lines(mle.contribution - ci.size ~ x.axis, lty=2)
-        par(mar=c(4,4,0,2)+0.1)
-        if(x.discrete) {
-                hist.vals <- table(x.raw)
-                hist.props <- sapply(x.axis,function(x) {
-                        tmp <- as.character(x)
-                        return(ifelse(tmp %in% names(hist.vals), hist.vals[tmp],0))
-                })/sum(hist.vals)
-                plot(x.axis, hist.props,type="h",lwd=4,ylab="Freq",xlab=xlab,ylim=c(0,1.1*max(hist.props)))
-        }
-        else {
-                plot(density(x.raw),ylab="Freq",xlab=xlab,main="")      
-        }
-}
+# plot.spline.contribution <- function(m,x.raw,y.raw,spline.basis,idx,x.axis,xlab=NULL,as.spline=T,x.discrete=T,...) {
+        # spline.params <- coef(m)[idx]
+        # spline.Sigma <- vcov(m)[idx,idx]
+        # if(as.spline) {
+                # tmp <- rcs(x.axis,parms=attr(spline.basis,"parms"))
+                # x.spline.basis <- cbind(rep(1,dim(tmp)[1]),matrix(tmp,dim(tmp)[1],dim(tmp)[2]))
+        # }
+        # else {
+                # x.spline.basis=cbind(rep(1,length(spline.basis)),spline.basis)
+                # print(x.spline.basis)
+                # print(spline.params)
+        # }
+        # mle.contribution <- x.spline.basis %*% spline.params
+        # ci.size <- qnorm(0.975)*sapply(1:length(mle.contribution),function(i) sqrt(t(x.spline.basis[i,]) %*% as.matrix(spline.Sigma) %*% x.spline.basis[i,]))
+        # print(cbind(mle.contribution,ci.size))
+        # nf <- layout(matrix(c(1,1,2,2),2,2,byrow=TRUE),heights=c(3,1))
+        # par(mar=c(-0.1,4,4,2)+0.1)
+        # plot(mle.contribution ~ x.axis,type="l",xlab="",xaxt="n",...)
+        # points(x.raw,y.raw,pch=".")
+        # lines(mle.contribution + ci.size ~ x.axis, lty=2)
+        # lines(mle.contribution - ci.size ~ x.axis, lty=2)
+        # par(mar=c(4,4,0,2)+0.1)
+        # if(x.discrete) {
+                # hist.vals <- table(x.raw)
+                # hist.props <- sapply(x.axis,function(x) {
+                        # tmp <- as.character(x)
+                        # return(ifelse(tmp %in% names(hist.vals), hist.vals[tmp],0))
+                # })/sum(hist.vals)
+                # plot(x.axis, hist.props,type="h",lwd=4,ylab="Freq",xlab=xlab,ylim=c(0,1.1*max(hist.props)))
+        # }
+        # else {
+                # plot(density(x.raw),ylab="Freq",xlab=xlab,main="")      
+        # }
+# }
 
 log.m <- log(corpusdata$m)
 x <- seq(min(log.m),max(log.m),by=0.05)
