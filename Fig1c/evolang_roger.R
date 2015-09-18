@@ -37,13 +37,29 @@ plot.spline.contribution <- function(m,x.raw,y.raw,spline.basis,idx,x.axis,xlab=
 }
 
 log.m <- log(corpusdata$m)
-spline.basis <- rcs(log.m)
-spline.model <- lm(extremity ~ spline.basis,corpusdata)
 x <- seq(min(log.m),max(log.m),by=0.05)
 
+# spline.basis <- rcs(log.m)
+# spline.model <- lm(extremity ~ spline.basis,corpusdata)
+
+# quartz(file="extremity-roger.pdf",height=7,width=7,type="pdf")
+# plot.spline.contribution(spline.model,log.m,corpusdata$extremity,1:5,x.axis=x,x.discrete=F,ylim=c(0,0.5),xlab=expression(paste(log[10]," ", "overall"," ", "freq")))
+# dev.off()
+
 quartz(file="extremity-roger.pdf",height=7,width=7,type="pdf")
-plot.spline.contribution(spline.model,log.m,corpusdata$extremity,1:5,x.axis=x,x.discrete=F,ylim=c(0,0.5))
-dev.off()
+m.loess <- loess(extremity ~ log.m,corpusdata)
+loess.predictions <- predict(m.loess,x,se=TRUE)
+        nf <- layout(matrix(c(1,1,2,2),2,2,byrow=TRUE),heights=c(4,1))
+        par(mar=c(-0.1,4,4,2)+0.1)
+        plot(loess.predictions$fit ~ x,type="l",xlab="",xaxt="n",ylim=c(0,0.5),col="blue",lwd=2,ylab="Extremity")
+        #lines(loess.predictions$fit + loess.predictions$se.fit ~ x, lty=2,lwd=2)
+        #lines(loess.predictions$fit - loess.predictions$se.fit ~ x, lty=2,lwd=2)
+        polygon(c(x,rev(x)),with(loess.predictions,c(fit+se.fit,rev(fit-se.fit))),col='grey',border=NA)
+        lines(loess.predictions$fit ~ x,col="blue",lwd=2,ylab="Extremity")
+        points(corpusdata$extremity ~ log.m,pch=19,cex=0.5)
+        par(mar=c(4,4,0,2)+0.1)
+        plot(density(log.m),ylab="Freq",xlab=expression(paste(log[10]," ", "overall"," ", "freq")),main="")    
+dev.off()  
 
 # load("roger.RData")
 
