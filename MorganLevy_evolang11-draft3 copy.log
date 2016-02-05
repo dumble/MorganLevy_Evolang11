@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  13 JAN 2016 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  20 OCT 2015 19:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**MorganLevy_evolang11-draft3.tex
-(./MorganLevy_evolang11-draft3.tex
+**"MorganLevy_evolang11-draft3 copy.tex"
+(./MorganLevy_evolang11-draft3 copy.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (./evolang11.cls (/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
@@ -225,8 +225,8 @@ Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
 \c@SC@C=\count114
 \SC@BOX=\box32
 )
-(./MorganLevy_evolang11-draft3.aux)
-\openout1 = `MorganLevy_evolang11-draft3.aux'.
+(./MorganLevy_evolang11-draft3 copy.aux)
+\openout1 = `"MorganLevy_evolang11-draft3 copy.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -346,287 +346,404 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 21.
 
+LaTeX Warning: Citation `Lieberman:2007bl' on page 1 undefined on input line 29
+.
+
+
+LaTeX Warning: Citation `Morgan:2015to' on page 1 undefined on input line 31.
+
+
+LaTeX Warning: Citation `Cooper:1975uz' on page 1 undefined on input line 31.
+
+
+LaTeX Warning: Citation `Benor:2006gv' on page 1 undefined on input line 31.
+
+
+LaTeX Warning: Citation `Lin:2012te' on page 1 undefined on input line 31.
+
+[1
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation `HudsonKam:2005we' on page 2 undefined on input line 37
+.
+
+
+LaTeX Warning: Citation `Reali:2009dp' on page 2 undefined on input line 37.
+
+
+LaTeX Warning: Citation `FERDINAND:2014tk' on page 2 undefined on input line 37
+.
+
+
+LaTeX Warning: Citation `Bickerton:1981ve' on page 2 undefined on input line 37
+.
+
+
+LaTeX Warning: Reference `sec:dataset' on page 2 undefined on input line 40.
+
+
+LaTeX Warning: Reference `sec:regul-freq-indep' on page 2 undefined on input li
+ne 40.
+
+
+LaTeX Warning: Reference `sec:emerg-freq-depend' on page 2 undefined on input l
+ine 40.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 2 undefined on input line 40.
+
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 48.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
- [1
-
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
+ [2]
 
-<corpus-hist.pdf, id=13, 505.89pt x 505.89pt>
+LaTeX Warning: Reference `fig:corpus' on page 3 undefined on input line 53.
+
+
+LaTeX Warning: Reference `fig:logistic' on page 3 undefined on input line 53.
+
+
+LaTeX Warning: Reference `fig:extremity' on page 3 undefined on input line 53.
+
+<corpus-hist.pdf, id=12, 505.89pt x 505.89pt>
 File: corpus-hist.pdf Graphic file (type pdf)
  <use corpus-hist.pdf>
-Package pdftex.def Info: corpus-hist.pdf used on input line 60.
+Package pdftex.def Info: corpus-hist.pdf used on input line 61.
 (pdftex.def)             Requested size: 101.1762pt x 101.1762pt.
 
-<logistic-hist.pdf, id=14, 505.89pt x 505.89pt>
+<logistic-hist.pdf, id=13, 505.89pt x 505.89pt>
 File: logistic-hist.pdf Graphic file (type pdf)
  <use logistic-hist.pdf>
-Package pdftex.def Info: logistic-hist.pdf used on input line 63.
+Package pdftex.def Info: logistic-hist.pdf used on input line 64.
 (pdftex.def)             Requested size: 101.1762pt x 101.1762pt.
 
-<Fig1c/extremity-roger.pdf, id=15, 505.89pt x 505.89pt>
+<Fig1c/extremity-roger.pdf, id=14, 505.89pt x 505.89pt>
 File: Fig1c/extremity-roger.pdf Graphic file (type pdf)
 
 <use Fig1c/extremity-roger.pdf>
-Package pdftex.def Info: Fig1c/extremity-roger.pdf used on input line 66.
+Package pdftex.def Info: Fig1c/extremity-roger.pdf used on input line 67.
 (pdftex.def)             Requested size: 101.1762pt x 101.1762pt.
- [3] [4 <./corpus-hist.pdf> <./logistic-hist.pdf> <./Fig1c/extremity-roger.pdf>
-] <sims-R-1-1.pdf, id=260, 289.08pt x 144.54pt>
-File: sims-R-1-1.pdf Graphic file (type pdf)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
 
-<use sims-R-1-1.pdf>
-Package pdftex.def Info: sims-R-1-1.pdf used on input line 107.
-(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
-File: sims-R-1-1.pdf Graphic file (type pdf)
- <use sims-R-1-1.pdf>
-Package pdftex.def Info: sims-R-1-1.pdf used on input line 107.
-(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
 
-<sims-R-10-1.pdf, id=261, 289.08pt x 144.54pt>
-File: sims-R-10-1.pdf Graphic file (type pdf)
- <use sims-R-10-1.pdf>
-Package pdftex.def Info: sims-R-10-1.pdf used on input line 109.
-(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
-File: sims-R-10-1.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `corpus' on page 3 undefined on input line 70.
 
-<use sims-R-10-1.pdf>
-Package pdftex.def Info: sims-R-10-1.pdf used on input line 109.
-(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
- <sims-R-1-2.pdf, id=262, 289.08pt x 144.54pt>
-File: sims-R-1-2.pdf Graphic file (type pdf)
 
-<use sims-R-1-2.pdf>
-Package pdftex.def Info: sims-R-1-2.pdf used on input line 111.
+LaTeX Warning: Reference `corpus' on page 3 undefined on input line 70.
+
+
+LaTeX Warning: Citation `SMITH:2009uw' on page 3 undefined on input line 78.
+
+[3 <./corpus-hist.pdf> <./logistic-hist.pdf> <./Fig1c/extremity-roger.pdf>]
+
+LaTeX Warning: Reference `eq:binomial' on page 4 undefined on input line 97.
+
+
+LaTeX Warning: Reference `fig:R11' on page 4 undefined on input line 99.
+
+<../sims-R-1-1-dotted.pdf, id=252, 289.08pt x 144.54pt>
+File: ../sims-R-1-1-dotted.pdf Graphic file (type pdf)
+
+<use ../sims-R-1-1-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-1-dotted.pdf used on input line 108.
 (pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
-File: sims-R-1-2.pdf Graphic file (type pdf)
- <use sims-R-1-2.pdf>
-Package pdftex.def Info: sims-R-1-2.pdf used on input line 111.
+File: ../sims-R-1-1-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-1-1-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-1-dotted.pdf used on input line 108.
 (pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
 
-<sims-R-10-2.pdf, id=263, 289.08pt x 144.54pt>
-File: sims-R-10-2.pdf Graphic file (type pdf)
- <use sims-R-10-2.pdf>
-Package pdftex.def Info: sims-R-10-2.pdf used on input line 113.
-(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
-File: sims-R-10-2.pdf Graphic file (type pdf)
+<../sims-R-10-1-dotted.pdf, id=253, 289.08pt x 144.54pt>
+File: ../sims-R-10-1-dotted.pdf Graphic file (type pdf)
 
-<use sims-R-10-2.pdf>
-Package pdftex.def Info: sims-R-10-2.pdf used on input line 113.
+<use ../sims-R-10-1-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-1-dotted.pdf used on input line 110.
 (pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
- <sims-R-1-3.pdf, id=264, 289.08pt x 144.54pt>
-File: sims-R-1-3.pdf Graphic file (type pdf)
-
-<use sims-R-1-3.pdf>
-Package pdftex.def Info: sims-R-1-3.pdf used on input line 115.
-(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
-File: sims-R-1-3.pdf Graphic file (type pdf)
- <use sims-R-1-3.pdf>
-Package pdftex.def Info: sims-R-1-3.pdf used on input line 115.
+File: ../sims-R-10-1-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-10-1-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-1-dotted.pdf used on input line 110.
 (pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
 
-<sims-R-10-3.pdf, id=265, 289.08pt x 144.54pt>
-File: sims-R-10-3.pdf Graphic file (type pdf)
- <use sims-R-10-3.pdf>
-Package pdftex.def Info: sims-R-10-3.pdf used on input line 117.
-(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
-File: sims-R-10-3.pdf Graphic file (type pdf)
+<../sims-R-1-2-dotted.pdf, id=254, 289.08pt x 144.54pt>
+File: ../sims-R-1-2-dotted.pdf Graphic file (type pdf)
 
-<use sims-R-10-3.pdf>
-Package pdftex.def Info: sims-R-10-3.pdf used on input line 117.
+<use ../sims-R-1-2-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-2-dotted.pdf used on input line 112.
 (pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
- <sims-R-1-4.pdf, id=266, 289.08pt x 187.902pt>
-File: sims-R-1-4.pdf Graphic file (type pdf)
+File: ../sims-R-1-2-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-1-2-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-2-dotted.pdf used on input line 112.
+(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
 
-<use sims-R-1-4.pdf>
-Package pdftex.def Info: sims-R-1-4.pdf used on input line 119.
+<../sims-R-10-2-dotted.pdf, id=255, 289.08pt x 144.54pt>
+File: ../sims-R-10-2-dotted.pdf Graphic file (type pdf)
+
+<use ../sims-R-10-2-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-2-dotted.pdf used on input line 114.
+(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
+File: ../sims-R-10-2-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-10-2-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-2-dotted.pdf used on input line 114.
+(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
+
+<../sims-R-1-3-dotted.pdf, id=256, 289.08pt x 144.54pt>
+File: ../sims-R-1-3-dotted.pdf Graphic file (type pdf)
+
+<use ../sims-R-1-3-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-3-dotted.pdf used on input line 116.
+(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
+File: ../sims-R-1-3-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-1-3-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-3-dotted.pdf used on input line 116.
+(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
+
+<../sims-R-10-3-dotted.pdf, id=257, 289.08pt x 144.54pt>
+File: ../sims-R-10-3-dotted.pdf Graphic file (type pdf)
+
+<use ../sims-R-10-3-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-3-dotted.pdf used on input line 118.
+(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
+File: ../sims-R-10-3-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-10-3-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-3-dotted.pdf used on input line 118.
+(pdftex.def)             Requested size: 86.72466pt x 43.36232pt.
+
+<../sims-R-1-4-dotted.pdf, id=258, 289.08pt x 187.902pt>
+File: ../sims-R-1-4-dotted.pdf Graphic file (type pdf)
+
+<use ../sims-R-1-4-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-4-dotted.pdf used on input line 120.
 (pdftex.def)             Requested size: 86.72466pt x 56.37103pt.
-File: sims-R-1-4.pdf Graphic file (type pdf)
- <use sims-R-1-4.pdf>
-Package pdftex.def Info: sims-R-1-4.pdf used on input line 119.
+File: ../sims-R-1-4-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-1-4-dotted.pdf>
+Package pdftex.def Info: ../sims-R-1-4-dotted.pdf used on input line 120.
 (pdftex.def)             Requested size: 86.72466pt x 56.37103pt.
 
-<sims-R-10-4.pdf, id=267, 289.08pt x 187.902pt>
-File: sims-R-10-4.pdf Graphic file (type pdf)
- <use sims-R-10-4.pdf>
-Package pdftex.def Info: sims-R-10-4.pdf used on input line 121.
-(pdftex.def)             Requested size: 86.72466pt x 56.37103pt.
-File: sims-R-10-4.pdf Graphic file (type pdf)
+<../sims-R-10-4-dotted.pdf, id=259, 289.08pt x 187.902pt>
+File: ../sims-R-10-4-dotted.pdf Graphic file (type pdf)
 
-<use sims-R-10-4.pdf>
-Package pdftex.def Info: sims-R-10-4.pdf used on input line 121.
+<use ../sims-R-10-4-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-4-dotted.pdf used on input line 122.
 (pdftex.def)             Requested size: 86.72466pt x 56.37103pt.
- [5 <./sims-R-1-1.pdf> <./sims-R-10-1.pdf> <./sims-R-1-2.pdf> <./sims-R-10-2.pd
-f> <./sims-R-1-3.pdf> <./sims-R-10-3.pdf> <./sims-R-1-4.pdf> <./sims-R-10-4.pdf
->] <R.pdf, id=513, 505.89pt x 505.89pt>
+File: ../sims-R-10-4-dotted.pdf Graphic file (type pdf)
+ <use ../sims-R-10-4-dotted.pdf>
+Package pdftex.def Info: ../sims-R-10-4-dotted.pdf used on input line 122.
+(pdftex.def)             Requested size: 86.72466pt x 56.37103pt.
+ [4]
+
+LaTeX Warning: Reference `fig:R' on page 5 undefined on input line 168.
+
+[5 <../sims-R-1-1-dotted.pdf> <../sims-R-10-1-dotted.pdf> <../sims-R-1-2-dotted
+.pdf> <../sims-R-10-2-dotted.pdf> <../sims-R-1-3-dotted.pdf> <../sims-R-10-3-do
+tted.pdf> <../sims-R-1-4-dotted.pdf> <../sims-R-10-4-dotted.pdf>]
+<R.pdf, id=512, 505.89pt x 505.89pt>
 File: R.pdf Graphic file (type pdf)
  <use R.pdf>
-Package pdftex.def Info: R.pdf used on input line 173.
+Package pdftex.def Info: R.pdf used on input line 174.
 (pdftex.def)             Requested size: 101.1762pt x 101.1762pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 180.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 181.
 
-[6 <./R.pdf>] <nu1R0.pdf, id=600, 216.81pt x 158.99399pt>
+
+LaTeX Warning: Reference `fig:R11' on page 6 undefined on input line 182.
+
+
+LaTeX Warning: Reference `fig:corpus' on page 6 undefined on input line 188.
+
+
+LaTeX Warning: Citation `Levy:2012bj' on page 6 undefined on input line 191.
+
+
+LaTeX Warning: Reference `fig:extremity' on page 6 undefined on input line 191.
+
+
+
+LaTeX Warning: Reference `fig:nuxR' on page 6 undefined on input line 207.
+
+
+LaTeX Warning: Reference `fig:corpus' on page 6 undefined on input line 207.
+
+[6 <./R.pdf>] <nu1R0.pdf, id=607, 216.81pt x 158.99399pt>
 File: nu1R0.pdf Graphic file (type pdf)
  <use nu1R0.pdf>
-Package pdftex.def Info: nu1R0.pdf used on input line 245.
+Package pdftex.def Info: nu1R0.pdf used on input line 246.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu1R0.pdf Graphic file (type pdf)
 
 <use nu1R0.pdf>
-Package pdftex.def Info: nu1R0.pdf used on input line 245.
+Package pdftex.def Info: nu1R0.pdf used on input line 246.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu1R1.pdf, id=601, 216.81pt x 158.99399pt>
+ <nu1R1.pdf, id=608, 216.81pt x 158.99399pt>
 File: nu1R1.pdf Graphic file (type pdf)
  <use nu1R1.pdf>
-Package pdftex.def Info: nu1R1.pdf used on input line 246.
+Package pdftex.def Info: nu1R1.pdf used on input line 247.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu1R1.pdf Graphic file (type pdf)
 
 <use nu1R1.pdf>
-Package pdftex.def Info: nu1R1.pdf used on input line 246.
+Package pdftex.def Info: nu1R1.pdf used on input line 247.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu1R2.pdf, id=602, 216.81pt x 158.99399pt>
+ <nu1R2.pdf, id=609, 216.81pt x 158.99399pt>
 File: nu1R2.pdf Graphic file (type pdf)
  <use nu1R2.pdf>
-Package pdftex.def Info: nu1R2.pdf used on input line 247.
+Package pdftex.def Info: nu1R2.pdf used on input line 248.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu1R2.pdf Graphic file (type pdf)
 
 <use nu1R2.pdf>
-Package pdftex.def Info: nu1R2.pdf used on input line 247.
+Package pdftex.def Info: nu1R2.pdf used on input line 248.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu1R3.pdf, id=603, 216.81pt x 158.99399pt>
+ <nu1R3.pdf, id=610, 216.81pt x 158.99399pt>
 File: nu1R3.pdf Graphic file (type pdf)
  <use nu1R3.pdf>
-Package pdftex.def Info: nu1R3.pdf used on input line 248.
+Package pdftex.def Info: nu1R3.pdf used on input line 249.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu1R3.pdf Graphic file (type pdf)
 
 <use nu1R3.pdf>
-Package pdftex.def Info: nu1R3.pdf used on input line 248.
+Package pdftex.def Info: nu1R3.pdf used on input line 249.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu2R0.pdf, id=604, 216.81pt x 158.99399pt>
+ <nu2R0.pdf, id=611, 216.81pt x 158.99399pt>
 File: nu2R0.pdf Graphic file (type pdf)
  <use nu2R0.pdf>
-Package pdftex.def Info: nu2R0.pdf used on input line 251.
+Package pdftex.def Info: nu2R0.pdf used on input line 252.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu2R0.pdf Graphic file (type pdf)
 
 <use nu2R0.pdf>
-Package pdftex.def Info: nu2R0.pdf used on input line 251.
+Package pdftex.def Info: nu2R0.pdf used on input line 252.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu2R1.pdf, id=605, 216.81pt x 158.99399pt>
+ <nu2R1.pdf, id=612, 216.81pt x 158.99399pt>
 File: nu2R1.pdf Graphic file (type pdf)
  <use nu2R1.pdf>
-Package pdftex.def Info: nu2R1.pdf used on input line 252.
+Package pdftex.def Info: nu2R1.pdf used on input line 253.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu2R1.pdf Graphic file (type pdf)
 
 <use nu2R1.pdf>
-Package pdftex.def Info: nu2R1.pdf used on input line 252.
+Package pdftex.def Info: nu2R1.pdf used on input line 253.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu2R2.pdf, id=606, 216.81pt x 158.99399pt>
+ <nu2R2.pdf, id=613, 216.81pt x 158.99399pt>
 File: nu2R2.pdf Graphic file (type pdf)
  <use nu2R2.pdf>
-Package pdftex.def Info: nu2R2.pdf used on input line 253.
+Package pdftex.def Info: nu2R2.pdf used on input line 254.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu2R2.pdf Graphic file (type pdf)
 
 <use nu2R2.pdf>
-Package pdftex.def Info: nu2R2.pdf used on input line 253.
+Package pdftex.def Info: nu2R2.pdf used on input line 254.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu2R3.pdf, id=607, 216.81pt x 158.99399pt>
+ <nu2R3.pdf, id=614, 216.81pt x 158.99399pt>
 File: nu2R3.pdf Graphic file (type pdf)
  <use nu2R3.pdf>
-Package pdftex.def Info: nu2R3.pdf used on input line 254.
+Package pdftex.def Info: nu2R3.pdf used on input line 255.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu2R3.pdf Graphic file (type pdf)
 
 <use nu2R3.pdf>
-Package pdftex.def Info: nu2R3.pdf used on input line 254.
+Package pdftex.def Info: nu2R3.pdf used on input line 255.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu3R0.pdf, id=608, 216.81pt x 158.99399pt>
+ <nu3R0.pdf, id=615, 216.81pt x 158.99399pt>
 File: nu3R0.pdf Graphic file (type pdf)
  <use nu3R0.pdf>
-Package pdftex.def Info: nu3R0.pdf used on input line 257.
+Package pdftex.def Info: nu3R0.pdf used on input line 258.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu3R0.pdf Graphic file (type pdf)
 
 <use nu3R0.pdf>
-Package pdftex.def Info: nu3R0.pdf used on input line 257.
+Package pdftex.def Info: nu3R0.pdf used on input line 258.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu3R1.pdf, id=609, 216.81pt x 158.99399pt>
+ <nu3R1.pdf, id=616, 216.81pt x 158.99399pt>
 File: nu3R1.pdf Graphic file (type pdf)
  <use nu3R1.pdf>
-Package pdftex.def Info: nu3R1.pdf used on input line 258.
+Package pdftex.def Info: nu3R1.pdf used on input line 259.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu3R1.pdf Graphic file (type pdf)
 
 <use nu3R1.pdf>
-Package pdftex.def Info: nu3R1.pdf used on input line 258.
+Package pdftex.def Info: nu3R1.pdf used on input line 259.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu3R2.pdf, id=610, 216.81pt x 158.99399pt>
+ <nu3R2.pdf, id=617, 216.81pt x 158.99399pt>
 File: nu3R2.pdf Graphic file (type pdf)
  <use nu3R2.pdf>
-Package pdftex.def Info: nu3R2.pdf used on input line 259.
+Package pdftex.def Info: nu3R2.pdf used on input line 260.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu3R2.pdf Graphic file (type pdf)
 
 <use nu3R2.pdf>
-Package pdftex.def Info: nu3R2.pdf used on input line 259.
+Package pdftex.def Info: nu3R2.pdf used on input line 260.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- <nu3R3.pdf, id=611, 216.81pt x 158.99399pt>
+ <nu3R3.pdf, id=618, 216.81pt x 158.99399pt>
 File: nu3R3.pdf Graphic file (type pdf)
  <use nu3R3.pdf>
-Package pdftex.def Info: nu3R3.pdf used on input line 260.
+Package pdftex.def Info: nu3R3.pdf used on input line 261.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
 File: nu3R3.pdf Graphic file (type pdf)
 
 <use nu3R3.pdf>
-Package pdftex.def Info: nu3R3.pdf used on input line 260.
+Package pdftex.def Info: nu3R3.pdf used on input line 261.
 (pdftex.def)             Requested size: 54.20236pt x 39.7484pt.
- [7 <./nu1R0.pdf> <./nu1R1.pdf> <./nu1R2.pdf> <./nu1R3.pdf> <./nu2R0.pdf> <./nu
-2R1.pdf> <./nu2R2.pdf> <./nu2R3.pdf> <./nu3R0.pdf> <./nu3R1.pdf> <./nu3R2.pdf> 
-<./nu3R3.pdf>] (./MorganLevy_evolang11-draft3.bbl [8]) [9]
-(./MorganLevy_evolang11-draft3.aux) ) 
+
+
+LaTeX Warning: Reference `fig:logistic' on page 7 undefined on input line 268.
+
+
+LaTeX Warning: Reference `fig:corpus' on page 7 undefined on input line 268.
+
+
+LaTeX Warning: Reference `fig:logistic' on page 7 undefined on input line 268.
+
+
+LaTeX Warning: Reference `fig:corpus' on page 7 undefined on input line 268.
+
+No file "MorganLevy_evolang11-draft3 copy".bbl.
+[7 <./nu1R0.pdf> <./nu1R1.pdf> <./nu1R2.pdf> <./nu1R3.pdf> <./nu2R0.pdf> <./nu2
+R1.pdf> <./nu2R2.pdf> <./nu2R3.pdf> <./nu3R0.pdf> <./nu3R1.pdf> <./nu3R2.pdf> <
+./nu3R3.pdf>] [8] (./MorganLevy_evolang11-draft3 copy.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4223 strings out of 493109
- 60991 string characters out of 6135004
- 127536 words of memory out of 5000000
- 7567 multiletter control sequences out of 15000+600000
- 24926 words of font info for 55 fonts, out of 8000000 for 9000
+ 4209 strings out of 493109
+ 61149 string characters out of 6135004
+ 126318 words of memory out of 5000000
+ 7556 multiletter control sequences out of 15000+600000
+ 23127 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,19n,47p,1658b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/
-enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on MorganLevy_evolang11-draft3.pdf (9 pages, 1422002 bytes).
+ 38i,19n,47p,1632b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times
+/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on "MorganLevy_evolang11-draft3 copy.pdf" (8 pages, 1367101 byte
+s).
 PDF statistics:
- 1125 PDF objects out of 1200 (max. 8388607)
- 845 compressed objects within 9 object streams
+ 1126 PDF objects out of 1200 (max. 8388607)
+ 844 compressed objects within 9 object streams
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
